@@ -4,8 +4,7 @@ environment with python, node and docker
 TLDR;
 
 ```bash
-pip install -r requirements.txt
-docker compose up -d
+./toaster.sh
 ```
 
 To access database use adminer on port 8080 or:
