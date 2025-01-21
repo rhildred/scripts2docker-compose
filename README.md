@@ -1,5 +1,7 @@
-# PROG8850Template
-environment with python, node and docker
+# scripts2docker-compose
+
+## exercise to convert `docker compose run` and `docker compose build` to a docker compose file
+
 
 TLDR;
 
