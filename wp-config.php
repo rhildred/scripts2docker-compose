@@ -89,6 +89,14 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+define( 'WP_CONTENT_URL', '/wp-content');
+
+define('FS_METHOD','direct');
+
+if(!empty($_SERVER['HTTP_X_FORWARDED_HOST']))
+   $_SERVER['HTTP_HOST']=$_SERVER['HTTP_X_FORWARDED_HOST'];
+if (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+   $_SERVER['HTTPS']='on';
 
 
 /* That's all, stop editing! Happy publishing. */
